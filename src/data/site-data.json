@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Nagaraju Reddy Boggala - Software Developer Portfolio",
+    "description": "Software Developer with nearly 3 years of hands-on experience in backend development, infrastructure management, and system reliability. Experienced in building secure, high-performance, and highly available distributed systems using Python, Flask, Docker and Kubernetes. Skilled in optimizing performance, scalability, and observability across microservices, caching, and messaging systems in enterprise environments.",
+    "keywords": [
+      "Software Developer",
+      "Platform Engineering",
+      "Python",
+      "Microservices",
+      "Containerization",
+      "Performance, Security & Monitoring",
+      "Portfolio",
+      "Nagaraju Reddy Boggala"
+    ],
+    "author": "Nagaraju Reddy Boggala",
+    "url": "https://nagarajureddyboggala.dev",
+    "image": "/og-image.jpg"
+  },
+  "profile": {
+    "name": "Nagaraju Reddy Boggala",
+    "title": "Software Developer",
+    "email": "nagarajureddyglory@gmail.com",
+    "phone": "+91 7993853464",
+    "location": "Bangalore, India",
+    "summary": "Software Developer with nearly 3 years of hands-on experience in backend development, infrastructure management, and system reliability. Experienced in building secure, high-performance, and highly available distributed systems using Python, Flask, Docker and Kubernetes. Skilled in optimizing performance, scalability, and observability across microservices, caching, and messaging systems in enterprise environments.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/b-nagaraju-reddy-3a759b226/",
+      "github": "https://github.com/NagarajuReddyBoggala",
+      "leetcode": "https://leetcode.com/u/nagarajureddy/"
+    }
+  },
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": ["Python"]
+    },
+    {
+      "category": "Web Technologies",
+      "items": ["HTML", "CSS", "REST APIs"]
+    },
+    {
+      "category": "Database Systems",
+      "items": ["MySQL", "MongoDB"]
+    },
+    {
+      "category": "Components",
+      "items": ["RabbitMQ", "Memcached", "Redis", "Valkey"]
+    },
+    {
+      "category": "Performance tools",
+      "items": ["Memtier benchmark", "K6", "Locust"]
+    },
+    {
+      "category": "DevOps & Version Control",
+      "items": ["Docker", "Kubernetes", "Git", "GitLab", "GitHub"]
+    },
+    {
+      "category": "Other Tools & Technologies",
+      "items": ["Postman", "Prometheus", "Grafana", "Vercel", "Render", "Cursor", "VS Code", "Linux" ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "Zeomega-SD",
+      "company": "ZeOmega",
+      "position": "Software Developer",
+      "location": "Bangalore, India",
+      "startDate": "2023-07",
+      "endDate": null,
+      "current": true,
+      "description": [
+        "Enhanced platform reliability and security by designing and implementing highly available caching and messaging systems, including Memcached, Redis Sentinel, and Valkey, all integrated with TLS encryption for secure data handling.",
+        "Boosted RabbitMQ performance and security by developing a batch message consumer that improved throughput by 200%, implementing mutual TLS (mTLS) with x.509 client certificates, and resolving critical security vulnerabilities to achieve enterprise-grade compliance.",
+        "Strengthened system observability by setting up Prometheus-Grafana-based monitoring and alerting for both RabbitMQ (single and HA setups) and system-level metrics, providing real-time visibility into performance and stability.",
+        "Modernized microservice architecture by upgrading key third-party components like Pydantic, Flask, and Flask-OpenAPI, ensuring better maintainability, compatibility, and performance across services.",
+        "Implemented persistent storage solutions using Longhorn for stateful workloads on bare-metal Kubernetes, ensuring fault tolerance and data durability across container and node restarts.",
+        "Led end-to-end infrastructure initiatives as a solo contributor, tackling complex challenges across caching, messaging, storage, and TLS, and ensuring production-grade availability, scalability, and resilience under high-load conditions."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rajiv Gandhi University of Knowledge Technologies",
+      "degree": "Bachelor of Technology",
+      "field": "Electronics and Communication",
+      "location": "RK Valley, Andhra Pradesh, India",
+      "startDate": "2019-07",
+      "endDate": "2023-05",
+      "gpa": "8.93/10.00",
+      "description": []
+    },
+    {
+      "institution": "Rajiv Gandhi University of Knowledge Technologies",
+      "degree": "Pre-University Course",
+      "field": "MBiPC",
+      "location": "RK Valley, Andhra Pradesh, India",
+      "startDate": "2017-07",
+      "endDate": "2019-05",
+      "gpa": "8.85/10.00",
+      "description": []
+    },
+    {
+      "institution": "Zilla Parishad High School",
+      "degree": "Secondary School Education",
+      "field": "",
+      "location": "Gangadhara Nellore, Andhra Pradesh, India",
+      "startDate": "2016-06",
+      "endDate": "2017-05",
+      "gpa": "9.7/10.00",
+      "description": []
+    }
+  ],
+  "honors": [
+    {
+      "title": "LeetCode Problem Solver",
+      "description": "Successfully solved 200+ across coding platforms like Leetcode, Hackerrank demonstrating strong problem-solving skills and consistency in data structures and algorithms."
+    },
+    {
+      "title": "Platform Reliability Contributor",
+      "description": "Led critical initiatives to enhance performance, stability, and security across distributed systems, including optimizing messaging, caching, and monitoring platforms to achieve enterprise-grade reliability."
+    }
+  ],
+  "projects": [
+    {
+      "id": "WorkTask-Planner",
+      "name": "WorkTask-Planner",
+      "description": "Comprehensive task management for organizing and planning work tasks.",
+      "longDescription": "An interactive app featuring calendar views, drag-and-drop checklists, Jira integration, task dependencies, priority/status tracking, and a dark/light theme in a modern responsive design.",
+      "tools": ["Python" , "Flask", "Flask-SQLAlchemy", "SQLite", "React.js", "Vite", "FullCalender.js", "REST APIs"],
+      "links": {
+        "github": "https://github.com/NagarajuReddyBoggala/WorkTask-Planner"
+      }
+    },
+    {
+      "id": "MyPortfolio",
+      "name": "MyPortfolio",
+      "description": "Personal portfolio website showcasing projects and skills.",
+      "longDescription": "Created a personal dynamic portfolio website to showcase my skills, projects, experience and provide a way for potential employers/clients to contact me.",
+      "tools": ["React.js", "Vite", "TypeScript", "Tailwind CSS"],
+      "links": {
+        "github": "https://github.com/NagarajuReddyBoggala/MyPortfolio"
+      }
+    }
+  ]
+}
+
