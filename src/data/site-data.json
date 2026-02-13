@@ -1,14 +1,21 @@
 {
   "meta": {
-    "title": "Nagaraju Reddy Boggala - Software Developer Portfolio",
-    "description": "Software Developer with nearly 3 years of hands-on experience in backend development, infrastructure management, and system reliability. Experienced in building secure, high-performance, and highly available distributed systems using Python, Flask, Docker and Kubernetes. Skilled in optimizing performance, scalability, and observability across microservices, caching, and messaging systems in enterprise environments.",
+    "title": "Nagaraju Reddy Boggala - Backend & Platform Engineer Portfolio",
+    "description": "Backend & Platform Engineer with 3 years of experience building highly available and secure distributed systems. CKA certified with hands-on expertise in Redis HA, RabbitMQ, Kubernetes, TLS/mTLS security, and production observability using Prometheus-Grafana. Specialized in microservices, infrastructure automation, and reliability engineering.",
     "keywords": [
-      "Software Developer",
-      "Platform Engineering",
+      "Backend Engineer",
+      "Platform Engineer",
       "Python",
+      "Kubernetes",
       "Microservices",
-      "Containerization",
-      "Performance, Security & Monitoring",
+      "Redis",
+      "RabbitMQ",
+      "Docker",
+      "DevOps",
+      "Distributed Systems",
+      "Performance Optimization",
+      "Security",
+      "Monitoring",
       "Portfolio",
       "Nagaraju Reddy Boggala"
     ],
@@ -18,11 +25,11 @@
   },
   "profile": {
     "name": "Nagaraju Reddy Boggala",
-    "title": "Software Developer",
+    "title": "Backend & Platform Engineer",
     "email": "nagarajureddyglory@gmail.com",
     "phone": "+91 7993853464",
     "location": "Bangalore, India",
-    "summary": "Software Developer with nearly 3 years of hands-on experience in backend development, infrastructure management, and system reliability. Experienced in building secure, high-performance, and highly available distributed systems using Python, Flask, Docker and Kubernetes. Skilled in optimizing performance, scalability, and observability across microservices, caching, and messaging systems in enterprise environments.",
+    "summary": "Backend & Platform Engineer with 3 years of experience building highly available and secure distributed systems. Certified Kubernetes Administrator (CKA) with hands-on expertise in Redis HA (Sentinel), RabbitMQ HA, Kubernetes, TLS/mTLS security, performance optimization, and production observability using Prometheus-Grafana. Specialized in backend infrastructure, automation, and reliability engineering for enterprise-grade systems.",
     "links": {
       "linkedin": "https://www.linkedin.com/in/b-nagaraju-reddy-3a759b226/",
       "github": "https://github.com/NagarajuReddyBoggala",
@@ -32,31 +39,43 @@
   "skills": [
     {
       "category": "Programming Languages",
-      "items": ["Python"]
+      "items": ["Python", "JavaScript", "Bash"]
     },
     {
-      "category": "Web Technologies",
-      "items": ["HTML", "CSS", "REST APIs"]
+      "category": "Backend Framework",
+      "items": ["Flask", "REST APIs", "Pydantic", "OpenAPI"]
     },
     {
-      "category": "Database Systems",
-      "items": ["MySQL", "MongoDB"]
+      "category": "Database & Caching",
+      "items": ["MySQL", "MongoDB", "Redis", "Valkey", "Memcached"]
     },
     {
-      "category": "Components",
-      "items": ["RabbitMQ", "Memcached", "Redis", "Valkey"]
+      "category": "Messaging Systems",
+      "items": ["RabbitMQ (HA, mTLS)"]
     },
     {
-      "category": "Performance tools",
-      "items": ["Memtier benchmark", "K6", "Locust"]
+      "category": "Containerization & Orchestration",
+      "items": ["Docker", "Kubernetes", "Longhorn"]
     },
     {
-      "category": "DevOps & Version Control",
-      "items": ["Docker", "Kubernetes", "Git", "GitLab", "GitHub"]
+      "category": "Observability & Monitoring",
+      "items": ["Prometheus", "Grafana", "Redis Insight"]
     },
     {
-      "category": "Other Tools & Technologies",
-      "items": ["Postman", "Prometheus", "Grafana", "Vercel", "Render", "Cursor", "VS Code", "Linux" ]
+      "category": "Performance Testing",
+      "items": ["k6", "Memtier Benchmark", "Locust"]
+    },
+    {
+      "category": "Security",
+      "items": ["TLS", "mTLS", "X.509 Certificates"]
+    },
+    {
+      "category": "CI/CD & Automation",
+      "items": ["Jenkins", "Bash scripting"]
+    },
+    {
+      "category": "Tools & Version Control",
+      "items": ["Git", "GitHub", "GitLab", "Linux", "Postman"]
     }
   ],
   "experience": [
@@ -69,12 +88,14 @@
       "endDate": null,
       "current": true,
       "description": [
-        "Enhanced platform reliability and security by designing and implementing highly available caching and messaging systems, including Memcached, Redis Sentinel, and Valkey, all integrated with TLS encryption for secure data handling.",
-        "Boosted RabbitMQ performance and security by developing a batch message consumer that improved throughput by 200%, implementing mutual TLS (mTLS) with x.509 client certificates, and resolving critical security vulnerabilities to achieve enterprise-grade compliance.",
-        "Strengthened system observability by setting up Prometheus-Grafana-based monitoring and alerting for both RabbitMQ (single and HA setups) and system-level metrics, providing real-time visibility into performance and stability.",
-        "Modernized microservice architecture by upgrading key third-party components like Pydantic, Flask, and Flask-OpenAPI, ensuring better maintainability, compatibility, and performance across services.",
-        "Implemented persistent storage solutions using Longhorn for stateful workloads on bare-metal Kubernetes, ensuring fault tolerance and data durability across container and node restarts.",
-        "Led end-to-end infrastructure initiatives as a solo contributor, tackling complex challenges across caching, messaging, storage, and TLS, and ensuring production-grade availability, scalability, and resilience under high-load conditions."
+        "Designed Redis Sentinel HA clusters and Valkey caching layer, implementing TLS encryption for secure inter-service communication and achieving zero-downtime failover capabilities.",
+        "Optimized RabbitMQ processing pipeline by implementing batch consumer architecture, improving message throughput by 200% and significantly reducing database load in high-volume environments.",
+        "Implemented mutual TLS (mTLS) authentication using X.509 certificates across services, eliminating plaintext credential exposure and achieving enterprise-grade security compliance.",
+        "Built centralized monitoring and alerting infrastructure using Prometheus and Grafana covering Redis HA, RabbitMQ HA, Memcached and VM metrics for production observability.",
+        "Performed production debugging and performance analysis using Redis Insight to diagnose replication lag, memory fragmentation, and optimize resource utilization.",
+        "Implemented persistent Kubernetes storage using Longhorn on bare-metal clusters, ensuring stateful workload durability and fault tolerance across container and node failures.",
+        "Developed Jenkins pipeline automation and Bash scripts to execute performance tests (Memtier) and generate comprehensive release validation reports.",
+        "Upgraded backend dependencies (Flask, Pydantic, OpenAPI) across microservices, improving service stability, maintainability, and compatibility with modern frameworks."
       ]
     }
   ],
@@ -112,21 +133,38 @@
   ],
   "honors": [
     {
+      "title": "Certified Kubernetes Administrator (CKA)",
+      "description": "The Linux Foundation (2025) - Demonstrates expertise in Kubernetes administration, cluster management, and production-grade orchestration.",
+      "date": "2025"
+    },
+    {
+      "title": "Python Programming Bootcamp",
+      "description": "Udemy - Comprehensive training in Python programming fundamentals and advanced concepts.",
+      "date": "2024"
+    },
+    {
+      "title": "The Complete Data Structures and Algorithms Course in Python",
+      "description": "Udemy - In-depth coverage of DSA concepts and algorithmic problem-solving in Python.",
+      "date": "2024"
+    },
+    {
       "title": "LeetCode Problem Solver",
-      "description": "Successfully solved 200+ across coding platforms like Leetcode, Hackerrank demonstrating strong problem-solving skills and consistency in data structures and algorithms."
+      "description": "Successfully solved 200+ problems across coding platforms (LeetCode, HackerRank) demonstrating strong problem-solving skills and consistency in data structures and algorithms.",
+      "date": "2024"
     },
     {
       "title": "Platform Reliability Contributor",
-      "description": "Led critical initiatives to enhance performance, stability, and security across distributed systems, including optimizing messaging, caching, and monitoring platforms to achieve enterprise-grade reliability."
+      "description": "Led critical initiatives to enhance performance, stability, and security across distributed systems, including optimizing messaging, caching, and monitoring platforms to achieve enterprise-grade reliability.",
+      "date": "2023-2025"
     }
   ],
   "projects": [
     {
       "id": "WorkTask-Planner",
       "name": "WorkTask-Planner",
-      "description": "Comprehensive task management for organizing and planning work tasks.",
-      "longDescription": "An interactive app featuring calendar views, drag-and-drop checklists, Jira integration, task dependencies, priority/status tracking, and a dark/light theme in a modern responsive design.",
-      "tools": ["Python" , "Flask", "Flask-SQLAlchemy", "SQLite", "React.js", "Vite", "FullCalender.js", "REST APIs"],
+      "description": "Full-stack task management system with task dependencies, scheduling, and priority tracking.",
+      "longDescription": "A comprehensive task management application featuring task dependencies, scheduling capabilities, priority and status tracking. Built with Python Flask backend and React frontend, providing a modern responsive design with calendar views, drag-and-drop checklists, Jira integration support, and dark/light theme options.",
+      "tools": ["Python", "Flask", "Flask-SQLAlchemy", "SQLite", "React.js", "Vite", "FullCalender.js", "REST APIs"],
       "links": {
         "github": "https://github.com/NagarajuReddyBoggala/WorkTask-Planner"
       }
@@ -134,8 +172,8 @@
     {
       "id": "MyPortfolio",
       "name": "MyPortfolio",
-      "description": "Personal portfolio website showcasing projects and skills.",
-      "longDescription": "Created a personal dynamic portfolio website to showcase my skills, projects, experience and provide a way for potential employers/clients to contact me.",
+      "description": "Personal portfolio website showcasing projects, skills, and experience.",
+      "longDescription": "A dynamic personal portfolio website built with modern web technologies to showcase skills, projects, experience, and professional achievements. Features SEO optimization, responsive design, and contact integration for potential employers and clients.",
       "tools": ["React.js", "Vite", "TypeScript", "Tailwind CSS"],
       "links": {
         "github": "https://github.com/NagarajuReddyBoggala/MyPortfolio"
