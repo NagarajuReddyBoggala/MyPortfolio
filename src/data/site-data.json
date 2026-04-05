@@ -20,9 +20,11 @@
   },
   "profile": {
     "name": "Nagaraju Reddy Boggala",
+    "title": "Backend & Platform Engineer",
     "email": "nagarajureddyglory@gmail.com",
     "phone": "+91 7993853464",
     "location": "Bangalore, India",
+    "summary": "Backend & Platform Engineer with 3 years of experience building highly available and secure distributed systems. Certified Kubernetes Administrator (CKA) with hands-on expertise in Redis HA (Sentinel), RabbitMQ HA, Kubernetes, TLS/mTLS security, and production observability using Prometheus-Grafana.",
     "links": {
       "linkedin": "https://www.linkedin.com/in/b-nagaraju-reddy-3a759b226/",
       "github": "https://github.com/NagarajuReddyBoggala",
@@ -151,6 +153,7 @@
     {
       "institution": "Rajiv Gandhi University of Knowledge Technologies",
       "degree": "Pre-University Course (PUC)",
+      "field": "M.BiP.C (Mathematics, Biology, Physics, Chemistry)",
       "location": "RK Valley, India",
       "startDate": "2017-07",
       "endDate": "2019-05",
