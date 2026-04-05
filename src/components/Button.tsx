@@ -1,12 +1,14 @@
 import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary';
+  size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
 }
 
 export const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
+  size = 'md',
   children,
   className = '',
   ...props
@@ -14,12 +16,17 @@ export const Button: React.FC<ButtonProps> = ({
   const variantClasses = {
     primary: 'btn-primary',
     secondary: 'btn-secondary',
-    outline: 'btn-outline',
+  };
+
+  const sizeClasses = {
+    sm: 'px-4 py-1.5 text-xs',
+    md: 'px-6 py-2.5 text-sm',
+    lg: 'px-10 py-4 text-base',
   };
 
   return (
     <button
-      className={`btn ${variantClasses[variant]} ${className} hover:scale-105 active:scale-95 transition-transform`}
+      className={`btn ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
       {...props}
     >
       {children}

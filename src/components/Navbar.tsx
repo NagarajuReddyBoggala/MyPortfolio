@@ -10,7 +10,10 @@ const navItems = [
   { id: 'connect', label: 'Connect' },
 ];
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+}
+
+export const Navbar: React.FC<NavbarProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -46,8 +49,8 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gray-900/95 backdrop-blur-sm border-b border-gray-800' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? 'glass-navbar' : 'bg-transparent py-2'
       }`}
       role="navigation"
       aria-label="Main navigation"
@@ -63,16 +66,16 @@ export const Navbar: React.FC = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1 ${
+                className={`text-xs font-bold tracking-widest uppercase transition-all duration-300 focus:outline-none rounded-lg px-4 py-2 ${
                   activeSection === item.id
-                    ? 'text-primary-400'
-                    : 'text-gray-300 hover:text-primary-400'
-                } hover:scale-110 transition-transform`}
+                    ? 'text-white bg-primary-600/20 shadow-[0_0_20px_rgba(139,92,246,0.1)] border border-primary-500/20'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
+                }`}
                 aria-current={activeSection === item.id ? 'page' : undefined}
               >
                 {item.label}

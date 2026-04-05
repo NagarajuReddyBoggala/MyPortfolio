@@ -1,5 +1,5 @@
 import React from 'react';
-import { siteData } from '@/data/site-data';
+import { Profile, SiteIdentity } from '@/types';
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -8,104 +8,71 @@ const scrollToSection = (id: string) => {
   }
 };
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  profile: Profile;
+  identity: SiteIdentity;
+}
+
+export const Footer: React.FC<FooterProps> = ({ profile, identity }) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 border-t border-gray-800" role="contentinfo">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">
-              {siteData.profile.name}
-            </h3>
-            <p className="text-gray-400 text-sm">
-              {siteData.profile.summary}
+    <footer className="bg-void-base border-t border-void-border relative overflow-hidden" role="contentinfo">
+      <div className="glow-secondary -top-24 -right-24 opacity-10" />
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl font-bold text-white mb-2">
+              {profile.name}
+            </h2>
+            <p className="text-gray-500 text-sm font-mono tracking-wider uppercase">
+              {identity.title}
             </p>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-            <nav aria-label="Footer navigation">
-              <ul className="space-y-2">
-                <li>
+          <nav aria-label="Footer navigation">
+            <ul className="flex flex-wrap justify-center gap-8">
+              {['home', 'experience', 'skills', 'projects', 'connect'].map((id) => (
+                <li key={id}>
                   <button
-                    onClick={() => scrollToSection('home')}
-                    className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded hover:translate-x-1 transition-transform inline-block"
+                    onClick={() => scrollToSection(id)}
+                    className="text-xs font-bold tracking-widest uppercase text-gray-400 hover:text-white transition-all duration-300"
                   >
-                    Home
+                    {id}
                   </button>
                 </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection('projects')}
-                    className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded hover:translate-x-1 transition-transform inline-block"
-                  >
-                    Projects
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection('connect')}
-                    className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded hover:translate-x-1 transition-transform inline-block"
-                  >
-                    Connect
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
-            <ul className="space-y-2" role="list">
-              {siteData.profile.links.linkedin && (
-                <li>
-                  <a
-                    href={siteData.profile.links.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded hover:translate-x-1 transition-transform inline-block"
-                    aria-label="LinkedIn profile"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-              )}
-              {siteData.profile.links.github && (
-                <li>
-                  <a
-                    href={siteData.profile.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded hover:translate-x-1 transition-transform inline-block"
-                    aria-label="GitHub profile"
-                  >
-                    GitHub
-                  </a>
-                </li>
-              )}
-              {siteData.profile.links.leetcode && (
-                <li>
-                  <a
-                    href={siteData.profile.links.leetcode}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded hover:translate-x-1 transition-transform inline-block"
-                    aria-label="LeetCode profile"
-                  >
-                    LeetCode
-                  </a>
-                </li>
-              )}
+              ))}
             </ul>
+          </nav>
+
+          <div className="flex gap-6">
+            {Object.entries(profile.links).map(([key, url]) => (
+              <a
+                key={key}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-primary-400 transition-all duration-300"
+                aria-label={`${key} profile`}
+              >
+                <span className="text-sm font-medium capitalize">{key}</span>
+              </a>
+            ))}
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © {currentYear} {siteData.profile.name}. All rights reserved.
+        <div className="border-t border-void-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+          <p className="text-gray-500 text-xs tracking-wide">
+            © {currentYear} {profile.name}. Crafted with Precision.
           </p>
+          <div className="flex gap-4 text-[10px] font-mono uppercase tracking-widest text-gray-600">
+            <span>React</span>
+            <span>•</span>
+            <span>Tailwind</span>
+            <span>•</span>
+            <span>Framer Motion</span>
+          </div>
         </div>
       </div>
     </footer>

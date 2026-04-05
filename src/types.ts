@@ -69,10 +69,20 @@ export interface Project {
   image?: string;
 }
 
+export interface SiteIdentity {
+  id: 'platform' | 'engineer';
+  label: string;
+  title: string;
+  summary: string;
+  skills: Skill[];
+  experience: Experience[];
+  projects: Project[];
+}
+
 export interface SiteData {
   meta: Meta;
   profile: Profile;
-  skills: Skill[];
+  identities: SiteIdentity[];
   experience: Experience[];
   education: Education[];
   honors: Honor[];

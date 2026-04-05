@@ -1,9 +1,13 @@
 import React from 'react';
 import { Section } from '@/components/Section';
 import { ExperienceCard } from '@/components/ExperienceCard';
-import { siteData } from '@/data/site-data';
+import { Experience as ExperienceType } from '@/types';
 
-export const Experience: React.FC = () => {
+interface ExperienceProps {
+  experience: ExperienceType[];
+}
+
+export const Experience: React.FC<ExperienceProps> = ({ experience }) => {
   return (
     <Section id="experience" className="min-h-screen flex flex-col justify-center bg-gray-800/50">
       <div className="max-w-4xl mx-auto">
@@ -14,7 +18,7 @@ export const Experience: React.FC = () => {
           My professional journey and the experiences that have shaped my career.
         </p>
         <div className="space-y-6">
-          {siteData.experience.map((exp) => (
+          {experience.map((exp) => (
             <ExperienceCard key={exp.id} experience={exp} />
           ))}
         </div>

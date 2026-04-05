@@ -1,8 +1,13 @@
 import React from 'react';
 import { Section } from '@/components/Section';
-import { siteData } from '@/data/site-data';
+import { Education, Honor } from '@/types';
 
-export const EducationHonors: React.FC = () => {
+interface EducationHonorsProps {
+  education: Education[];
+  honors: Honor[];
+}
+
+export const EducationHonors: React.FC<EducationHonorsProps> = ({ education, honors }) => {
   return (
     <Section id="education-honors" className="min-h-screen flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
@@ -13,7 +18,7 @@ export const EducationHonors: React.FC = () => {
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-white mb-6">Education</h3>
           <div className="space-y-6">
-            {siteData.education.map((edu, index) => (
+            {education.map((edu, index) => (
               <div
                 key={index}
                 className="card group hover:scale-[1.02] hover:shadow-xl hover:shadow-primary-500/20 transition-all duration-300"
@@ -51,7 +56,7 @@ export const EducationHonors: React.FC = () => {
         <div>
           <h3 className="text-2xl font-semibold text-white mb-6">Honors & Awards</h3>
           <div className="space-y-6">
-            {siteData.honors.map((honor, index) => (
+            {honors.map((honor, index) => (
               <div
                 key={index}
                 className="card group hover:scale-[1.02] hover:shadow-xl hover:shadow-primary-500/20 transition-all duration-300"

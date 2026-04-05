@@ -1,9 +1,13 @@
 import React from 'react';
 import { Section } from '@/components/Section';
 import { ProjectCard } from '@/components/ProjectCard';
-import { siteData } from '@/data/site-data';
+import { Project } from '@/types';
 
-export const Projects: React.FC = () => {
+interface ProjectsProps {
+  projects: Project[];
+}
+
+export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
     <Section id="projects" className="min-h-screen flex flex-col justify-center">
       <div className="max-w-7xl mx-auto">
@@ -15,7 +19,7 @@ export const Projects: React.FC = () => {
           a unique challenge and learning experience.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {siteData.projects.map((project) => (
+          {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
