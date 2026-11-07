@@ -54,19 +54,34 @@ export const EducationHonors: React.FC<EducationHonorsProps> = ({ education, hon
         </div>
 
         <div>
-          <h3 className="text-2xl font-semibold text-white mb-6">Honors & Awards</h3>
+          <h3 className="text-2xl font-semibold text-white mb-6">Certifications & Honors</h3>
           <div className="space-y-6">
             {honors.map((honor, index) => (
               <div
                 key={index}
-                className="card group hover:scale-[1.02] hover:shadow-xl hover:shadow-primary-500/20 transition-all duration-300"
+                className="glass-card p-6 group hover:scale-[1.01] hover:shadow-xl hover:shadow-primary-500/20 transition-all duration-300"
               >
-                <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-primary-400 transition-colors">
-                  {honor.title}
-                </h4>
-                <p className="text-gray-400">{honor.description}</p>
-                {honor.date && (
-                  <p className="text-gray-500 text-sm mt-2">{honor.date}</p>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                  <h4 className="text-xl font-semibold text-white group-hover:text-primary-400 transition-colors">
+                    {honor.title}
+                  </h4>
+                  {honor.date && (
+                    <span className="text-xs font-mono text-primary-400 bg-primary-500/10 px-3 py-1 rounded-full border border-primary-500/20 w-fit">
+                      {honor.date}
+                    </span>
+                  )}
+                </div>
+                <p className="text-gray-400 mb-4">{honor.description}</p>
+                {honor.link && (
+                  <a
+                    href={honor.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary-400 hover:text-primary-300 transition-colors"
+                  >
+                    <span>Verify Official Credential</span>
+                    <span className="text-sm">→</span>
+                  </a>
                 )}
               </div>
             ))}

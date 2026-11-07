@@ -50,7 +50,7 @@ export const Home: React.FC<HomeProps> = ({ identity }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Button onClick={() => scrollToSection('experience')} variant="primary" size="lg" className="w-full sm:w-auto">
             Explore Experience
@@ -58,6 +58,56 @@ export const Home: React.FC<HomeProps> = ({ identity }) => {
           <Button onClick={() => scrollToSection('projects')} variant="secondary" size="lg" className="w-full sm:w-auto">
             View Projects
           </Button>
+          <a
+            href="/B_Nagaraju_Reddy_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-8 py-3 rounded-xl font-semibold transition-all duration-300 border border-primary-500/40 text-primary-300 hover:text-white hover:bg-primary-500/10 hover:border-primary-400 inline-flex items-center justify-center gap-2"
+          >
+            <span>Resume</span>
+            <span className="text-xs uppercase px-2 py-0.5 rounded bg-primary-500/20 text-primary-400 font-mono">PDF</span>
+          </a>
+        </motion.div>
+
+        {/* High-Impact Stat Badges */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto"
+        >
+          <div className="glass-card p-5 text-center border-primary-500/20 hover:border-primary-500/40 transition-colors">
+            <div className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-indigo-300 font-mono">
+              CKA
+            </div>
+            <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+              Certified K8s Admin (2026)
+            </div>
+          </div>
+          <div className="glass-card p-5 text-center border-primary-500/20 hover:border-primary-500/40 transition-colors">
+            <div className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-indigo-300 font-mono">
+              &lt;24 hrs
+            </div>
+            <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+              Rollout Cycle (from 3 wks)
+            </div>
+          </div>
+          <div className="glass-card p-5 text-center border-primary-500/20 hover:border-primary-500/40 transition-colors">
+            <div className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-indigo-300 font-mono">
+              +200%
+            </div>
+            <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+              Throughput & 0 Message Loss
+            </div>
+          </div>
+          <div className="glass-card p-5 text-center border-primary-500/20 hover:border-primary-500/40 transition-colors">
+            <div className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-indigo-300 font-mono">
+              Merged PR
+            </div>
+            <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+              VectorDB-Bench OSS
+            </div>
+          </div>
         </motion.div>
       </div>
     </Section>

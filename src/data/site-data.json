@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Nagaraju Reddy Boggala - Senior Platform & SRE Engineer Portfolio",
-    "description": "Senior Platform & SRE Engineer with 3 years of end-to-end infrastructure ownership. CKA certified with hands-on expertise in Redis HA (Sentinel 3+3 Topology), RabbitMQ HA, Kubernetes, HashiCorp Vault, mTLS security, and production observability using Prometheus-Grafana.",
+    "title": "Nagaraju Reddy Boggala - Senior Platform Engineer | Distributed Systems & DevEx",
+    "description": "Certified Kubernetes Administrator (CKA, 2026) & Senior Platform Engineer. Specialist in high-availability distributed systems (Redis Sentinel 3+3, Memcached, RabbitMQ DLQ), developer platforms (Project Halo, Config Studio), zero-trust security (HashiCorp Vault, ECC encryption), and observability.",
     "keywords": [
       "Senior Platform Engineer",
       "Site Reliability Engineer",
@@ -10,8 +10,10 @@
       "CKA",
       "HashiCorp Vault",
       "mTLS",
-      "Terraform",
-      "AWS",
+      "ECC Encryption",
+      "Project Halo",
+      "Config Studio",
+      "DevEx",
       "Redis Sentinel",
       "RabbitMQ",
       "Prometheus",
@@ -25,13 +27,13 @@
   },
   "profile": {
     "name": "Nagaraju Reddy Boggala",
-    "title": "Senior Platform & SRE Engineer",
+    "title": "Senior Platform Engineer | Distributed Systems & DevEx",
     "email": "nagarajureddyglory@gmail.com",
     "phone": "+91 7993853464",
     "location": "Bengaluru, India",
-    "summary": "Senior Software Developer specializing in Platform Engineering with 3 years of end-to-end infrastructure ownership at ZeOmega (HIPAA-compliant healthcare SaaS). Certified Kubernetes Administrator (CKA, 2026) with expertise in production-grade HA systems (Redis Sentinel 3+3, Memcached HA), mTLS PKI security, HashiCorp Vault HA, 20+ component Prometheus/Grafana observability stack, and Jenkins CI/CD pipelines cutting deployment cycles from 3 weeks to under 24 hours.",
+    "summary": "Senior Software Developer specializing in Platform Engineering, Distributed Systems, and Developer Platforms (DevEx) with end-to-end infrastructure ownership at ZeOmega (HIPAA-compliant healthcare SaaS). Certified Kubernetes Administrator (CKA, 2026) with proven architectural ownership of non-invasive microservices extensibility platforms (Project Halo), distributed caching (Redis Sentinel 3+3, Memcached HA), zero-trust secrets orchestration (HashiCorp Vault), event-driven messaging (RabbitMQ), and Jenkins CI/CD deployment pipelines.",
     "links": {
-      "linkedin": "https://www.linkedin.com/in/b-nagaraju-reddy-3a759b226/",
+      "linkedin": "https://www.linkedin.com/in/b-nagaraju-reddy/",
       "github": "https://github.com/NagarajuReddyBoggala",
       "website": "https://boggalanagarajureddy-portfolio.vercel.app/"
     }
@@ -40,33 +42,42 @@
     {
       "id": "platform",
       "label": "Platform & SRE View",
-      "title": "Senior Platform & SRE Engineer",
-      "summary": "Senior Software Developer specializing in Platform Engineering with 3 years of end-to-end infrastructure ownership at ZeOmega (HIPAA-compliant healthcare SaaS). Certified Kubernetes Administrator (CKA, 2026) with expertise in production-grade HA systems (Redis Sentinel 3+3, Memcached HA), mTLS PKI security, HashiCorp Vault HA, 20+ component Prometheus/Grafana observability stack, and Jenkins CI/CD pipelines cutting deployment cycles from 3 weeks to under 24 hours.",
+      "title": "Senior Platform Engineer | Distributed Systems & DevEx",
+      "summary": "Certified Kubernetes Administrator (CKA, 2026) with deep production ownership of distributed caching (Redis Sentinel 3+3, Memcached), event-driven messaging (RabbitMQ), secrets orchestration (HashiCorp Vault), and developer platforms (DevEx). Architect of the 'Halo' non-invasive extensibility framework and upstream contributor to VectorDB-Bench.",
       "skills": [
         {
-          "category": "Orchestration & Containers",
+          "category": "Platform & Orchestration",
           "items": [
-            "Kubernetes (bare-metal, CKA 2026)",
+            "Kubernetes (CKA Certified, 2026)",
             "Docker",
+            "Linux Internals (RHEL, Ubuntu)",
+            "Bare-Metal Clusters",
             "Helm",
-            "Longhorn Persistent Storage",
-            "Samba"
+            "Longhorn Storage",
+            "Bash"
           ]
         },
         {
-          "category": "Cloud & Infrastructure as Code",
+          "category": "Distributed Systems & Data",
           "items": [
-            "AWS (EC2, VPC, IAM, S3, Route53)",
-            "Terraform"
+            "Redis Sentinel HA (3+3 Topology)",
+            "Memcached HA",
+            "RabbitMQ (HA, DLQ)",
+            "MongoDB HA",
+            "Milvus",
+            "pgvector",
+            "PostgreSQL"
           ]
         },
         {
-          "category": "CI/CD & Automation",
+          "category": "Zero-Trust Security & Compliance",
           "items": [
-            "Jenkins",
-            "SCM-based Pipelines",
-            "x.509 Cert Automation",
-            "One-click Rollout Pipelines"
+            "HashiCorp Vault (HA, AppRole, PKI)",
+            "mTLS (x.509 Certificates)",
+            "ECC Asymmetric Encryption",
+            "Redis ACL Multitenancy",
+            "Audit Logging",
+            "HIPAA Compliance"
           ]
         },
         {
@@ -77,55 +88,20 @@
             "mongodb_exporter",
             "Structured Logging",
             "Automated Alerting",
-            "Incident Response"
+            "Capacity Planning",
+            "Load Testing (Locust, Memtier, k6)"
           ]
         },
         {
-          "category": "Messaging & Caching",
+          "category": "CI/CD & Developer Experience",
           "items": [
-            "RabbitMQ (HA Clustering, Batch Workflows)",
-            "Redis (Sentinel HA, 3+3 Topology)",
-            "Memcached HA"
-          ]
-        },
-        {
-          "category": "Security & Compliance",
-          "items": [
-            "HashiCorp Vault (HA, PKI, AppRole)",
-            "mTLS (x.509 Certificates)",
-            "ACL Multitenancy",
-            "Audit Logging",
-            "HIPAA Compliance"
-          ]
-        },
-        {
-          "category": "Performance Testing",
-          "items": [
-            "Memtier Benchmark",
-            "Locust",
-            "k6",
-            "Failover Validation",
-            "Capacity Planning"
-          ]
-        },
-        {
-          "category": "Languages & Databases",
-          "items": [
+            "Jenkins (SCM Pipelines)",
+            "Config Studio (Internal Dev Portal)",
+            "x.509 Cert Automation",
+            "Automated Performance Validation",
             "Python",
-            "Bash",
-            "MongoDB",
-            "PostgreSQL",
-            "MySQL",
-            "Vector DBs (Milvus, pgvector)"
-          ]
-        },
-        {
-          "category": "Operating Systems & Networking",
-          "items": [
-            "Linux Administration (RHEL, Ubuntu)",
-            "DNS",
-            "TLS/mTLS",
-            "TCP/IP Fundamentals"
+            "FastAPI",
+            "Angular"
           ]
         }
       ],
@@ -133,23 +109,51 @@
         {
           "id": "ZeOmega-Senior-SD",
           "company": "ZeOmega (Healthcare SaaS)",
-          "position": "Senior Software Developer (Platform Engineering Focus)",
+          "position": "Senior Software Developer (Platform Engineering)",
           "location": "Bengaluru, India",
-          "startDate": "2023-07",
+          "startDate": "2026-07",
           "endDate": null,
           "current": true,
           "description": [
-            "Architected Redis Sentinel HA (3+3 topology) and Memcached HA from scratch across a microservices platform, eliminating all single points of failure; validated with Memtier Benchmark & Locust across throughput, latency, failover time, and memory limits; tuned maxmemory and eviction policies; documented failover behaviour and Memcached internals.",
-            "Built one-click Jenkins CI/CD pipelines for Redis and Memcached deployments (HA + TLS + version management + integrated testing) — cutting each rollout cycle from 3 weeks to under 24 hours; automated x.509 certificate generation and rotation across all pipeline stages.",
-            "Introduced mTLS security architecture from scratch across inter-service communication using x.509 certificates; architected a highly available HashiCorp Vault cluster with AppRole authentication and automated certificate rotation; enforced Redis multitenancy via ACL-based data isolation and delivered audit logging for HIPAA compliance.",
-            "Independently built end-to-end observability platform using Prometheus + Grafana covering 20+ infrastructure components (RabbitMQ, Redis HA, Memcached, MongoDB, RHEL & Windows VMs); configured mongodb_exporter telemetry; reported and validated metric gatherer registration conflicts under MongoDB 8.3.x (percona/mongodb_exporter issue #1285).",
-            "Deployed and managed stateful workloads on a 3-node bare-metal Kubernetes cluster with Longhorn persistent storage; resolved production DNS caching incidents; stress-tested workloads for fault tolerance and data durability before rollout.",
-            "Eliminated production message-drop incidents by redesigning RabbitMQ batch consumer with optimised processing workflows — 200% throughput improvement, zero data loss across critical healthcare data pipelines; directly reduced client-facing downtime.",
-            "Benchmarked Milvus vs pgvector across 1M vectors (1024-dim) for latency, recall & throughput; findings directly influenced team's vector search architecture; contributed bug fix merged into VectorDB-Bench open source codebase."
+            "Modular Extensibility Platform (Project Halo): Co-architected 'Halo', a non-invasive microservice extensibility platform enabling dynamic runtime feature injection and custom workflows without modifying the core monolithic codebase, eliminating regression risks across healthcare SaaS environments.",
+            "Internal Developer Portal (DevEx): Architected and delivered 'Config Studio', an Angular self-service configuration portal empowering engineering teams to independently configure, toggle, and deploy dynamic microservice extensions without manual intervention.",
+            "API Cryptography & Zero-Trust Security: Hardened authentication and login endpoints by implementing Elliptic Curve Cryptography (ECC) asymmetric encryption; engineered standardized microservice auth middleware to enforce uniform enterprise RBAC protocols."
+          ]
+        },
+        {
+          "id": "ZeOmega-SD",
+          "company": "ZeOmega (Healthcare SaaS)",
+          "position": "Software Developer (Platform Engineering)",
+          "location": "Bengaluru, India",
+          "startDate": "2023-07",
+          "endDate": "2026-06",
+          "current": false,
+          "description": [
+            "Distributed Cache HA Architecture: Architected Redis Sentinel (3+3 topology) and Memcached HA from scratch across the microservices ecosystem, eliminating all single points of failure; validated sub-second failovers, memory boundaries, and eviction policies via Locust and Memtier.",
+            "CI/CD & Automated Performance Validation: Engineered end-to-end Jenkins pipelines for automated Redis HA and Memcached rollouts across TLS and non-TLS topologies; integrated x.509 certificate provisioning and automated post-deployment performance testing, slashing rollout cycles from 3 weeks to under 24 hours.",
+            "Secrets Orchestration & Compliance: Architected a high-availability HashiCorp Vault cluster with AppRole authentication and automated PKI rotation; enforced Redis ACL-based multitenancy and audit logging to satisfy HIPAA compliance mandates.",
+            "High-Throughput Messaging Reliability: Overhauled RabbitMQ batch consumer architecture with optimized worker routines and Dead Letter Queues (DLQ), achieving a 200% throughput increase and zero data loss across clinical pipelines.",
+            "Enterprise Observability & Open Source: Built enterprise observability stack (Prometheus + Grafana) monitoring 20+ components; authored and upstreamed a bug fix for metric registration conflicts under MongoDB 8.3.x (percona/mongodb_exporter#1285).",
+            "AI Infrastructure Benchmarking: Evaluated vector databases (Milvus vs. pgvector) across 1M vectors (1024-dim) for latency, recall, and p99 throughput; contributed a critical benchmark bug fix merged into the official open-source VectorDB-Bench repository."
           ]
         }
       ],
       "projects": [
+        {
+          "id": "ProjectHalo",
+          "name": "Project Halo & Config Studio",
+          "description": "Non-invasive enterprise microservices extensibility platform & developer self-service portal.",
+          "longDescription": "Co-architected an overlay extensibility framework enabling runtime feature injection without altering core healthcare platform code. Includes 'Config Studio' (Angular self-service portal), MongoDB HA replica sets for dynamic schemas, Redis Sentinel HA for runtime caching, and ECC asymmetric encryption on auth endpoints.",
+          "tools": [
+            "Angular",
+            "MongoDB HA",
+            "Redis Sentinel HA",
+            "ECC Encryption",
+            "Microservices",
+            "DevEx"
+          ],
+          "links": {}
+        },
         {
           "id": "SmartQueueProcessor",
           "name": "Smart Queue Processor",
@@ -168,9 +172,9 @@
         },
         {
           "id": "VectorDBBench",
-          "name": "VectorDB-Bench Bug Fix (Merged Open Source)",
+          "name": "VectorDB-Bench Bug Fix (Merged Upstream OSS)",
           "description": "Contributed bug fix merged into official Zilliz VectorDB-Bench repository (PR #763).",
-          "longDescription": "Benchmarked Milvus vs pgvector across 1M 1024-dimensional vectors for latency, recall & throughput. Identified and submitted a bug fix that was merged into the official Zilliz VectorDB-Bench codebase.",
+          "longDescription": "Benchmarked Milvus vs pgvector across 1M 1024-dimensional vectors for latency, recall & throughput. Identified and submitted a benchmark bug fix that was merged into the official Zilliz VectorDB-Bench codebase.",
           "tools": [
             "Python",
             "Milvus",
@@ -184,7 +188,7 @@
         },
         {
           "id": "MongoDBExporterIssue",
-          "name": "Percona MongoDB Exporter Issue Validation",
+          "name": "Percona MongoDB Exporter Upstream Fix",
           "description": "Reported and validated upstream metric gatherer registration conflict under MongoDB 8.3.x.",
           "longDescription": "Discovered, reported, and helped validate metric gatherer registration conflicts under MongoDB 8.3.x diagnosticdata collector for Prometheus mongodb_exporter (Issue #1285 on percona/mongodb_exporter).",
           "tools": [
@@ -196,23 +200,6 @@
           ],
           "links": {
             "github": "https://github.com/percona/mongodb_exporter/issues/1285"
-          }
-        },
-        {
-          "id": "TaskFlow",
-          "name": "TaskFlow (WorkTask-Planner)",
-          "description": "Enterprise-grade task management system with real-time updates and complex scheduling.",
-          "longDescription": "A robust full-stack application featuring an interactive Kanban board, sprint calendar integration, and secure user authentication. Built with a Python Flask backend (REST API, SQLAlchemy, JWT) and a high-performance React frontend.",
-          "tools": [
-            "React",
-            "Python (Flask)",
-            "PostgreSQL",
-            "SQLAlchemy",
-            "JWT",
-            "Vite"
-          ],
-          "links": {
-            "github": "https://github.com/NagarajuReddyBoggala/WorkTask-Planner"
           }
         }
       ]
@@ -234,12 +221,13 @@
   "honors": [
     {
       "title": "Certified Kubernetes Administrator (CKA)",
-      "description": "The Linux Foundation (Feb 2026) — Verified credential for Kubernetes cluster administration, networking, security, and workload management.",
-      "date": "Feb 2026"
+      "description": "The Linux Foundation (Issued Feb 2026) — Verified credential for Kubernetes cluster architecture, networking, security, storage, and production incident troubleshooting.",
+      "date": "Feb 2026",
+      "link": "https://www.credly.com/badges/d399e64b-207a-4526-b0de-4562916affde/linked_in"
     },
     {
       "title": "Data Structures & Algorithms in Python",
-      "description": "Udemy (Dec 2022) — Comprehensive algorithm design, computational complexity analysis, and problem-solving.",
+      "description": "Comprehensive algorithm design, computational complexity analysis, and problem-solving.",
       "date": "Dec 2022"
     }
   ],

@@ -53,6 +53,7 @@ export interface Honor {
   title: string;
   description: string;
   date?: string;
+  link?: string;
 }
 
 export interface Project {

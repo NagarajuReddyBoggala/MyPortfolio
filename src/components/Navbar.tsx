@@ -66,12 +66,12 @@ export const Navbar: React.FC<NavbarProps> = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
+          <div className="hidden md:flex items-center space-x-3 lg:space-x-5">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-xs font-bold tracking-widest uppercase transition-all duration-300 focus:outline-none rounded-lg px-4 py-2 ${
+                className={`text-xs font-bold tracking-widest uppercase transition-all duration-300 focus:outline-none rounded-lg px-3 py-2 ${
                   activeSection === item.id
                     ? 'text-white bg-primary-600/20 shadow-[0_0_20px_rgba(139,92,246,0.1)] border border-primary-500/20'
                     : 'text-gray-400 hover:text-white hover:bg-white/5'
@@ -81,6 +81,14 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 {item.label}
               </button>
             ))}
+            <a
+              href="/B_Nagaraju_Reddy_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-lg bg-primary-600 text-white hover:bg-primary-500 shadow-md shadow-primary-600/20 transition-all hover:scale-105"
+            >
+              Resume ↗
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -131,6 +139,14 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 {item.label}
               </button>
             ))}
+            <a
+              href="/B_Nagaraju_Reddy_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-left px-4 py-2 text-base font-medium rounded-md text-primary-400 hover:bg-gray-800 transition-colors"
+            >
+              Resume (PDF) ↗
+            </a>
           </div>
         )}
       </div>
